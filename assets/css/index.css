@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: #225d28;
+}
+
+.site-title {
+    color: #fff;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px #000;
+}
+
+ol li {
+    list-style: square;
+}
+
+ol li:nth-child(1) {
+    background-color: #225d28;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#toggler, .navbar label {
+    display: none;
+}
+
+.quotation {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.sup {
+    font-weight: 900;
+    font-size: 10px;
+}
+
+ol li {
+    margin: 40px;
+    padding: 5px;
+    line-height: 0.2px;
+}
+
+footer {
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+}
